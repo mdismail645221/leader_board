@@ -17,16 +17,17 @@
     list-style: none;
  }
  body{
-    background: #E5E5E5;
+    background: #F3F1FF;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 500;
     font-family: 'Poppins', sans-serif;
     line-height: 22px;
     color: #000;
  }
  .container{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
+    margin-top: 2em;
  }
  .d-flex{
     display: flex;
@@ -37,20 +38,32 @@
  .wrap{
     flex-wrap: wrap;
  }
+ hr{
+    margin-top: 1.875em;
+    border:1px solid  #D1D1D1;
+ }
 
  /*================  ================
         header style starts 
   ================  ================*/
 .header{
     background-color: #562EFF;
-  
+}
+.main_logo {
+    display: flex;
+    align-items: center;
 }
 
-.nav-bar{
+.main_logo span {
+    margin-left: 1em;
+    color: #fff;
+}
+
+.nav_bar{
     align-items: center;
     height: 94px;
 }
-.nav-bar img{
+.nav_bar img{
     width: 40.42px;
     height: 51px;
 }
@@ -73,19 +86,138 @@
   ================  ================*/
 
 
+ /*================  ================
+       top_player_area  style starts 
+  ================  ================*/
+
+  h1.top_title {
+    color: #562EFF;
+    font-weight: 500;
+    font-size: 24px;
+    /* padding-bottom: 1.5em; */
+    background: #fff;
+    /* padding-top: 1.5em; */
+    padding: 1.875em;
+}
+.single_top_players {
+    display: flex;
+    align-items: center;
+}
+
+.players_logo img {
+    width: 56px;
+    height: 56px;
+}
+
+.players_logo {
+    margin-right: 1em;
+}
+
+.top_player_area {
+    background: #fff;
+    padding: 1.875em;
+}
+
+.top_player_items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1em;
+    background-color: #fff;
+    justify-content: space-between;
+    /* padding: 1.875em; */
+}
+.players_title h3 {
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+ /*================  ================
+        top_players_area style ends 
+  ================  ================*/
 
 
  /*================  ================
-        header style starts 
+        blogs-area style starts 
   ================  ================*/
+  .blogs-logo img {
+    width: 95%;
+}
+.blog-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1.5em;
+}
+
+article.single-blogs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blogs-title h3 {
+    font-size: 1.25em;
+    line-height: 34px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.blogs-title p {
+    color: #9F9F9F;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.blogs-title a {
+    color: #562EFF;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.blog-items {
+    padding: 1.875em;
+    background-color: #fff;
+}
+/*================  ================
+       header style ends 
+ ================  ================*/
+
+
+
  /*================  ================
-        header style ends 
+        course-area style start 
   ================  ================*/
+.course-logo img {
+    width: 90%;
+}
+.course-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 1em;
+    background-color: #fff;
+    padding: 1.875em;
+}
+.course-info-times {
+    display: flex;
+    align-items: center;
+}
+
+.course-info-times img {
+    width: 20px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+}
+.course-info-times {
+    display: flex;
+    align-items: center;
+}
  /*================  ================
-        header style starts 
-  ================  ================*/
- /*================  ================
-        header style ends 
+       course-area style ends 
   ================  ================*/
   
 
