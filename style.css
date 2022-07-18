@@ -1,8 +1,11 @@
 /*============ =============
         common style 
  ============ =============*/
+ /* font-awosome propins */
  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
-
+/* font-awosome roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&family=Roboto:wght@400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
  *{
     padding: 0;
     margin: 0;
@@ -48,10 +51,18 @@
   ================  ================*/
 .header{
     background-color: #562EFF;
+    /* position:fixed ;
+    width: 100%;
+    top: 0;
+    height: 15%; */
+}
+.header .container{
+    margin-top: 0;
 }
 .main_logo {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .main_logo span {
@@ -157,7 +168,7 @@ article.single-blogs {
     align-items: center;
 }
 .blogs-title h3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 34px;
     margin-bottom: 6px;
     font-weight: 500;
@@ -189,13 +200,13 @@ article.single-blogs {
         course-area style start 
   ================  ================*/
 .course-logo img {
-    width: 90%;
+    width: 100%;
 }
 .course-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 1em;
+    grid-column-gap: 1.5em;
     background-color: #fff;
     padding: 1.875em;
 }
@@ -207,7 +218,11 @@ article.single-blogs {
 .course-info-times img {
     width: 20px;
 }
-
+article.single-course {
+    /* background: red; */
+    box-shadow: 6px 5px 14px;
+    border-radius: 18px;
+}
 .course-info {
     display: flex;
     justify-content: space-between;
@@ -216,8 +231,226 @@ article.single-blogs {
     display: flex;
     align-items: center;
 }
+.course-title h3 {
+    font-size: 1.25em;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height: 23px;
+}
+
+.course-title p {
+    color: #ED6B4F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.918rem;
+    padding-top: 7px;
+}
+.course-info-items {
+    padding: 0 0.75em;
+}
+
+.course-info {
+    padding: 1.78125em 0;
+}
+i.fa-solid.fa-star {
+    color: #FFC014;
+}
+i.fa-solid.fa-star.fa-gray {
+    color: #AEAEAE;
+}
+
+.course-info-icons span {
+    padding: 0 0.5em;
+}
+i.fa-solid.fa-star.fa-gray {
+    color: #AEAEAE;
+}
+
+.course-info-icons span {
+    padding: 0 0.5em;
+}
+
+.course-info-times.d-flex {
+    background: #FFE4E8;
+    padding: 0.3125em;
+    border-radius: 14.6913px;
+}
  /*================  ================
        course-area style ends 
   ================  ================*/
-  
 
+
+
+  /* =========footer====== */
+.footer{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+}
+.footer h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 8px;
+}
+
+
+
+/* media query all section */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+        .header .container{
+            margin-top: 0;
+        }
+        .manu_bar li img{
+            display: none;
+        }
+        .nav_bar{
+            flex-direction: column;
+            
+            margin-bottom: 1em;
+        }
+        .main_logo{
+            flex-direction: column;
+            margin-bottom: 1em;
+        }
+        .header{
+            padding: 1.5em;
+            background: rgba(26, 6, 253, 0.8);
+        }
+        /* top-players */
+        .top_player_items {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            /* grid-columns-gap: 1em; */
+        }
+        /* top blogs */
+        .blog-items img{
+            width: 90%;
+        }
+        .blog-items{
+            grid-template-columns: 1fr;
+        }
+        .blogs-title h3 {
+            font-size: 1rem;
+            line-height: 34px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .blogs-title p {
+            color: #9F9F9F;
+            font-size: .5rem;
+            font-weight: 400;
+        }
+
+        .blogs-title a {
+            color: #562EFF;
+            font-size: .5rem;
+            font-weight: 400;
+        }
+
+        /* Lates course */
+
+        .course-items{
+            grid-template-columns: 1fr;
+            grid-row-gap: 1.5em;
+        }
+        /* footer */
+        .footer{
+            background: #BD79F7;
+            color: #000;
+        }
+        .footer h4{
+            font-size: 1rem;
+        }
+        .footer p{
+            font-size: .8rem;
+        }
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+        .header .container{
+            margin-top: 0;
+        }
+        .manu_bar li img{
+            display: none;
+        }
+        .manu_bar li{
+            margin-bottom: 1em;
+        }
+        .manu_bar{
+            flex-direction: row;
+        }
+        .nav_bar{
+            flex-direction: column;
+            margin-bottom: 2em;
+        }
+        .main_logo{
+            flex-direction: column;
+            margin-bottom: 1em;
+        }
+        .header{
+            padding: 1.5em;
+            background: #3e1adf;
+        }
+        /* top-players */
+        .top_player_items {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            /* grid-columns-gap: 1em; */
+        }
+        /* top blogs */
+        .blog-items img{
+            width: 90%;
+        }
+        .blog-items{
+            grid-template-columns: 1fr 1fr;
+        }
+        .blogs-title h3 {
+            font-size: 1rem;
+            line-height: 34px;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        .blogs-title p {
+            color: #9F9F9F;
+            font-size: .5rem;
+            font-weight: 400;
+        }
+
+        .blogs-title a {
+            color: #562EFF;
+            font-size: .5rem;
+            font-weight: 400;
+        }
+
+        /* Lates course */
+
+        .course-items{
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 1.5em;
+        }
+        /* footer */
+        .footer{
+            background: #BD79F7;
+            color: #000;
+        }
+        .footer h4{
+            font-size: 1.5rem;
+        }
+        .footer p{
+            font-size: 1rem;
+        }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
