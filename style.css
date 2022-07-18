@@ -182,7 +182,7 @@ article.single-blogs {
 
 .blogs-title a {
     color: #562EFF;
-    font-size: .8rem;
+    font-size: 1em;
     font-weight: 400;
 }
 
@@ -339,13 +339,13 @@ i.fa-solid.fa-star.fa-gray {
         }
         .blogs-title p {
             color: #9F9F9F;
-            font-size: 10px;
+            font-size: .5rem;
             font-weight: 400;
         }
 
         .blogs-title a {
             color: #562EFF;
-            font-size: 6px;
+            font-size: .5rem;
             font-weight: 400;
         }
 
@@ -417,13 +417,13 @@ i.fa-solid.fa-star.fa-gray {
         }
         .blogs-title p {
             color: #9F9F9F;
-            font-size: .4rem;
+            font-size: 10px;
             font-weight: 400;
         }
 
         .blogs-title a {
             color: #562EFF;
-            font-size: .3rem;
+            font-size: 10px;
             font-weight: 400;
         }
 
